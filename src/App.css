@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.login-illustration{
+  width: 300px;
+  height: 500px;
+}
+
+.login-card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+  color: #CFCFCF;
+  font-weight: 600;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 3px solid #CFCFCF;
+}
+
+.divider:not(:empty)::before {
+  margin-right: .75em;
+}
+
+.divider:not(:empty)::after {
+  margin-left: .75em;
+}
+
+.divider-text{
+  font-size: 14px;
+  font-weight: 700;
+  color: #3D3D3D
+}
+.login-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #3D3D3D
+}
+.small-title{
+  font-size: 15px;
+  font-weight: 700;
+  color: #3D3D3D
+}
+
+.small-span {
+  font-size: 15px;
+  font-weight: 600;
+  color: #587FFF;
+  text-decoration: none;
+}
+.form-input .form-control {
+  all: unset; 
+  width: 270px;
+  height: 40px;
+  border: 2px solid #3E3E3E !important;
+  border-radius: 2px;
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #000;
+}
+
+.form-input .form-control::placeholder {
+  font-size: 15px;
+  font-weight: 600;
+  color: #3D3D3D;
+}
+
+.password-input .form-control {
+  all: unset; 
+  width: 270px;
+  height: 40px;
+  border: 2px solid #3E3E3E !important;
+  border-radius: 2px;
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #000;
+  outline: none;
+}
+
+.password-input .form-control::placeholder {
+    font-size: 15px;
+  font-weight: 600;
+  color: #3D3D3D;
+}
+
+.btn-submit {
+  all: unset;
+  width: 270px;
+  height: 40px;
+  border: none;
+  border-radius: 0px !important;   
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #FCFCFC;       
+  background-color: #3C3C3C !important; 
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn-submit:focus,
+.btn-submit:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+
+.form-control:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: #3E3E3E; 
+}
+
+
+.form-check-input[type="checkbox"] {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #000;   
+  
+  border-radius: 0px !important;      
+  cursor: pointer;
+  appearance: none;    
+  -webkit-appearance: none;
+  outline: none;
+  position: relative;
+  background-color: #F2F2F2
+}
+
+.form-check-input[type="checkbox"]:checked {
+  background-color: #000;  
+  border-color: #000 !important;
+}
+
+.form-check-input[type="checkbox"]:focus {
+  box-shadow: none;
+  border-color: #000;
+}
+
+
+.form-check-label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #3D3D3D;
+  margin-top: 4px;
+  margin-left: 10px;
+  cursor: pointer;        
+  user-select: none;     
+}
+
+
+.error-message{
+  color: red;
+  font-size: 14px;
+  bottom: -20px;
+   position: absolute;  /* bottom: -18px; */
+  left: 0;
+  font-weight: 600;
+}
+
