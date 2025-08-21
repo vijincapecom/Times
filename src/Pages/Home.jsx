@@ -61,7 +61,7 @@ const Home = () => {
                         <Col md={10} className="mb-3">
                             <CarouselComponent countries={filtered.slice(0, 5)} />
                         </Col>
-                        <Col md={2} className="mb-3">
+                        <Col md={2} className="mb-3 ">
                             <CarouselComponent countries={filtered.slice(6, 10)} />
                         </Col>
                     </Row>
